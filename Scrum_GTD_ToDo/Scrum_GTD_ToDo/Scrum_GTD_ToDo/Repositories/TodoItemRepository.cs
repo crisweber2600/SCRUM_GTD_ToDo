@@ -30,7 +30,9 @@ namespace Scrum_GTD_ToDo.Repositories
         }
         public async Task AddItem(TodoItem item)
         {
-            throw new NotImplementedException();
+            await CreateConnection();
+            await connection.InsertAsync(item);
+            OnItemAdded?.Invoke(this, item);
         }
 
         public async Task AddOrUpdate(TodoItem item)
