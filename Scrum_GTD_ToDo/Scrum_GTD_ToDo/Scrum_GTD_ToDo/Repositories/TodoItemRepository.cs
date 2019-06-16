@@ -23,9 +23,9 @@ namespace Scrum_GTD_ToDo.Repositories
 
             connection = new SQLiteAsyncConnection(databasePath);
             await connection.CreateTableAsync<TodoItem>();
-            if(await connection.Table<TodoItem>().CountAsync()==0)
+            if (await connection.Table<TodoItem>().CountAsync() == 0) 
             {
-                await connection.InsertAsync(new TodoItem() { Title = "Welcome to the best GTD System"})
+                await connection.InsertAsync(new TodoItem() { Title = "Welcome to the best GTD System" });
             }
         }
         public async Task AddItem(TodoItem item)
@@ -48,7 +48,8 @@ namespace Scrum_GTD_ToDo.Repositories
 
         public async Task<List<TodoItem>> GetItems()
         {
-            throw new NotImplementedException();
+            await CreateConnection();
+            return await connection.Table<TodoItem>().ToListAsync();
         }
 
         public async Task UpdateItem(TodoItem item)
