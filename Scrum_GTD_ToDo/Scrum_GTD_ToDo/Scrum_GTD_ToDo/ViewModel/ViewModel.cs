@@ -16,6 +16,6 @@ namespace Scrum_GTD_ToDo.ViewModel
                 PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(propertyName));
             }
         }
-        public INavigation navigation { get; set; }
+        public INavigation Navigation { get; set; }
     }
 }
