@@ -45,7 +45,6 @@ namespace Scrum_GTD_ToDo.Repositories
             {
                 await UpdateItem(item);
             }
-            throw new NotImplementedException();
         }
 
         public async Task<List<TodoItem>> GetItems()
