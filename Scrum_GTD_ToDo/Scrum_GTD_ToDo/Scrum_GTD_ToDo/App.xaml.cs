@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Scrum_GTD_ToDo.Views;
 
 namespace Scrum_GTD_ToDo
 {
@@ -10,7 +11,7 @@ namespace Scrum_GTD_ToDo
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(Resolver.Resolve<MainView>());
         }
 
         protected override void OnStart()
