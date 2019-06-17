@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Scrum_GTD_ToDo.ViewModel
+namespace Scrum_GTD_ToDo.ViewModels
 {
     public class MainViewModel : ViewModel
     {

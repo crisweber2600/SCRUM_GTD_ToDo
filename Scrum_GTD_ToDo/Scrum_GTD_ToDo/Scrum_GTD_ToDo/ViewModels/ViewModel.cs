@@ -4,7 +4,7 @@ using System.Text;
 using System.ComponentModel;
 using Xamarin.Forms;
 
-namespace Scrum_GTD_ToDo.ViewModel
+namespace Scrum_GTD_ToDo.ViewModels
 {
     public abstract class ViewModel : INotifyPropertyChanged
     {

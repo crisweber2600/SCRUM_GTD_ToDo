@@ -1,4 +1,4 @@
-﻿using Scrum_GTD_ToDo.ViewModel;
+﻿using Scrum_GTD_ToDo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

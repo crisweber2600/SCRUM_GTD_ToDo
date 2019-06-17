@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Scrum_GTD_ToDo.ViewModel
+namespace Scrum_GTD_ToDo.ViewModels
 {
     public class TodoItemViewModel:ViewModel
     {

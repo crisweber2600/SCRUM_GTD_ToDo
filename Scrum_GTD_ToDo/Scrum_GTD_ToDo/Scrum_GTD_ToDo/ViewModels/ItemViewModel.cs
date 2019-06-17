@@ -6,7 +6,7 @@ using Scrum_GTD_ToDo.Models;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace Scrum_GTD_ToDo.ViewModel
+namespace Scrum_GTD_ToDo.ViewModels
 {
     public class ItemViewModel:ViewModel
     {
